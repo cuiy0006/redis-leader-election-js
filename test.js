@@ -11,7 +11,7 @@ redisClient.on('ready', () => {
     console.log('ready!!!!!');
 });
 
-let le = new LeaderElection(redisClient);
+let le = new LeaderElection(redisClient, lease_timeout=10000, acquire_lock_interval=1000, lock_key='test');
 
 le.on('elected', function() {
     console.log(now(), 'elected');
