@@ -28,18 +28,18 @@ Subscribe events of leader election
 <br/><br/>
   
 ```
-le.elect()
+await le.elect()
 ```
 Start to join the election  
 <br/><br/>
   
 ```
-le.is_leader()
+await le.is_leader()
 ```
 Return whether the service the leader now  
 <br/><br/>
   
 ```
-le.release()
+await le.release()
 ```
 Exit from the leader election  
